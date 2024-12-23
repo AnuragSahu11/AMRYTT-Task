@@ -4,8 +4,8 @@ export const Navbar = () => {
   return (
     <div className="h-[40px] mb-6 flex">
       <div className="w-[708px]">
-        <div class="relative mb-6">
-          <div class="absolute inset-y-0 start-0 flex items-center ps-2.5 pointer-events-none">
+        <div className="relative mb-6">
+          <div className="absolute inset-y-0 start-0 flex items-center ps-2.5 pointer-events-none">
             <svg
               width="24"
               height="24"
@@ -22,7 +22,7 @@ export const Navbar = () => {
           <input
             type="text"
             id="input-group-1"
-            class="text-gray-900 font-medium text-sm bg-transparent block w-full ps-10 p-2.5"
+            className="text-gray-900 font-medium text-sm bg-transparent block w-full ps-10 p-2.5"
             placeholder="Search"
           />
         </div>

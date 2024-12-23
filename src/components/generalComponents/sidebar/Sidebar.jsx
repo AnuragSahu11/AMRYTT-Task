@@ -11,7 +11,11 @@ export const Sidebar = () => {
         />
       </div>
       {sidebarListItems.map((item, index) => (
-        <SidebarListItem isSelected={index === 0} listItemDetail={item} />
+        <SidebarListItem
+          key={index}
+          isSelected={index === 0}
+          listItemDetail={item}
+        />
       ))}
     </div>
   );
@@ -29,12 +33,10 @@ const SidebarListItem = ({ listItemDetail, isSelected }) => {
       </div>
     </div>
   ) : (
-    <div
-      className={`h-12 border-l-4 w-full border-transparent  flex  text-primary`}
-    >
+    <div className={`h-12 border-l-4 w-full border-transparent  flex`}>
       <img className="ml-6 w-6 h-6 my-auto" src={icon} />
       <div className="h-min ml-2 my-auto">
-        <p className="font-semibold text-sm">{name}</p>
+        <p className="font-semibold text-sm text-fontsec">{name}</p>
       </div>
     </div>
   );
